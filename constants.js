@@ -1,6 +1,6 @@
-exports.TMANAGER_COLLECTION_NAME = "tmanager"
+export const TMANAGER_COLLECTION_NAME = "tmanager"
 
-exports.qrCodeCategories = [
+export const QRCODE_CATEGORIES = [
   {
     label: "Familiare",
     value: "familiare",
