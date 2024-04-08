@@ -6,10 +6,9 @@ export const additionalPropsSchema = {
     qrCode: { type: 'string' },
     qrCodeCategory: {
       type: 'object',
-      required: ['_id', 'name'],
       properties: {
-        _id: { type: 'string' },
-        name: { type: 'string' },
+        label: { type: 'string' },
+        value: { type: 'string' },
       },
       additionalProperties: false,
     },
