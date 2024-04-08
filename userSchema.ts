@@ -1,4 +1,4 @@
-const additionalPropsSchema = {
+export const additionalPropsSchema = {
   type: 'object',
   required: ['dearId', 'qrCodeCategory'],
   properties: {
