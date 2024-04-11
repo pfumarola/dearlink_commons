@@ -1,3 +1,4 @@
 export type LicenseInfo = {
-  tenant: string
+  tenant: string,
+  expiration: string,
 }
