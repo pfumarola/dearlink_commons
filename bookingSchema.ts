@@ -1,3 +1,8 @@
+import { bookingStatuses } from "./enums"
+
+// enums to array
+export const bookingStatusesArray = Object.values(bookingStatuses)
+
 export const bookingSchema = {
   type: 'object',
   required: ['dearId', 'date', 'time', 'duration', 'status', 'user'],
@@ -7,7 +12,7 @@ export const bookingSchema = {
     date: { type: 'string' },
     time: { type: 'string' },
     duration: { type: 'number' },
-    status: { type: 'string', enum: ['active', 'canceled', 'completed'] },
+    status: { type: 'string', enum: bookingStatusesArray },
     user: { type: 'string' },
     createdAt: { type: 'string' },
     updatedAt: { type: 'string' },
