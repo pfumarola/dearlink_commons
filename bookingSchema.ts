@@ -1,4 +1,4 @@
-import { bookingStatuses } from "./enums"
+import { bookingStatuses } from "./enums.js"
 
 // enums to array
 export const bookingStatusesArray = Object.values(bookingStatuses)
